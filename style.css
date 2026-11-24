@@ -1,0 +1,158 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #142850;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(to right, #142850, #27496d);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.about h2,
+.courses h2,
+.facilities h2,
+.contact h2 {
+    color: #142850;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    padding: 50px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: #e3f2fd;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px gray;
+}
+
+.course h3 {
+    color: #142850;
+    margin-bottom: 10px;
+}
+
+/* Facilities Section */
+.facilities {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+.facilities ul {
+    list-style: none;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #142850;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .home h2 {
+        font-size: 28px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
